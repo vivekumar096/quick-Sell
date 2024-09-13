@@ -4,13 +4,15 @@ import "./TopNav.css";
 import { useDispatch, useSelector } from "react-redux";
 import { selectData } from "../../Actions/DataAction";
 
-const retrieveGroup = () => {
-  return localStorage.getItem("group") || "status"; /* Simplified logic */
-};
 
 const retrieveOrder = () => {
   return localStorage.getItem("order") || "priority"; /* Simplified logic */
 };
+
+const retrieveGroup = () => {
+  return localStorage.getItem("group") || "status"; /* Simplified logic */
+};
+
 
 const TopNav = () => {
   const [displayOnClick, setDisplayOnClick] = useState(false);
